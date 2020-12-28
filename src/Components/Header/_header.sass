@@ -1,0 +1,45 @@
+.header
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  max-width: 100%
+  background: $bg-black
+  padding: 1.5rem
+  gap: 1rem
+  .header__logos
+    display: flex
+    flex-flow: row nowrap
+    gap: 2rem
+    img
+      height: 2.4rem
+      min-height: 2.4rem
+      max-height: 2.4rem
+      &:nth-child(2)
+        padding: 0 2rem
+        border-left: $white solid 1px
+  .header__navs
+    flex: 1
+    font-size: $sm
+    display: flex
+    flex-flow: row nowrap
+    gap: 1rem
+    a
+      font-weight: bold
+      font-family: $font-regular
+      color: $white
+      padding: .3rem
+      &:hover
+        text-decoration: underline
+  .header__user
+    a
+      display: flex
+      flex-flow: row nowrap
+      align-items: center
+      gap: 1.3rem
+      img
+        border-radius: 50%
+        height: 3rem
+      span
+        color: $white
+        font-size: $sm
+        cursor: pointer

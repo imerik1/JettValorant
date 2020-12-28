@@ -1,0 +1,432 @@
+@import url("http://db.onlinewebfonts.com/c/7e389c5e310dc537b083e0e25ea6eab5?family=Druk+Wide+Medium");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-size: 57.5%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 1024px) {
+  * {
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 53.5%;
+  }
+}
+
+@media (max-width: 480px) {
+  * {
+    font-size: 44.5%;
+  }
+}
+
+@media (max-width: 264px) {
+  * {
+    font-size: 39.5%;
+  }
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  max-width: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+a {
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+ol, ul {
+  list-style-type: none;
+}
+
+ol li, ul li {
+  list-style: none;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  background: #1F2326;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.header .header__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 2rem;
+}
+
+.header .header__logos img {
+  height: 2.4rem;
+  min-height: 2.4rem;
+  max-height: 2.4rem;
+}
+
+.header .header__logos img:nth-child(2) {
+  padding: 0 2rem;
+  border-left: #FFFFFF solid 1px;
+}
+
+.header .header__navs {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 1rem;
+}
+
+.header .header__navs a {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  padding: .3rem;
+}
+
+.header .header__navs a:hover {
+  text-decoration: underline;
+}
+
+.header .header__user a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.3rem;
+}
+
+.header .header__user a img {
+  border-radius: 50%;
+  height: 3rem;
+}
+
+.header .header__user a span {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 100%;
+}
+
+.main .bg__main {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  background: url("./Assets/bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main .bg__main .bg__one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.main .bg__main .bg__red {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: -1;
+  background: #e92939;
+}
+
+.main .bg__main .bg__two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: url("./Assets/elements.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main .bg__main .bg__two > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse nowrap;
+          flex-flow: row-reverse nowrap;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  height: 100%;
+  padding: 4rem 0;
+}
+
+.main .bg__main .bg__two > div img {
+  padding: 0 9rem 0 0;
+  height: 80rem;
+}
+
+.main .bg__main .bg__two > article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 72rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4rem 0 0 4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding: 2rem 0 0;
+  background: #F8F8F8;
+}
+
+.main .bg__main .bg__two > article .lore__header {
+  color: #1F2326;
+  padding: 0 4rem;
+}
+
+.main .bg__main .bg__two > article .lore__header h1 {
+  font-family: "Druk Wide Medium";
+  font-size: 2.1rem;
+  margin: 2rem 0;
+}
+
+.main .bg__main .bg__two > article .lore__header h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  color: #999595;
+}
+
+.main .bg__main .bg__two > article .lore__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse nowrap;
+          flex-flow: row-reverse nowrap;
+  margin: 4rem 0 2rem;
+}
+
+.main .bg__main .bg__two > article .lore__section .agent__info {
+  margin-left: 50%;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.main .bg__main .bg__two > article .lore__section .agent__info .title {
+  font-family: "Druk Wide Medium";
+  font-size: 2.1rem;
+  margin-bottom: 4rem;
+}
+
+.main .bg__main .bg__two > article .lore__section .agent__info span {
+  line-height: 2rem;
+  font-family: "Druk Wide Medium";
+  font-size: 1rem;
+}
+
+.main .bg__main .bg__two > article .lore__section .agent__info .desc__title {
+  color: #999595;
+}
+
+.main .bg__main .bg__two > article .lore__section .agent__info .desc__desc {
+  margin-left: 1rem;
+  color: #1F2326;
+}
+
+.main .bg__main .bg__two > article .lore__section img {
+  position: absolute;
+  top: 0;
+  left: -3%;
+  width: 33rem;
+}
+
+.main .bg__main .bg__two .list__abilities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 4rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 1rem;
+  width: 100%;
+  background: #1F2326;
+}
+
+.main .bg__main .bg__two .list__abilities .ability {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: .7rem;
+}
+
+.main .bg__main .bg__two .list__abilities .ability img {
+  height: 4rem;
+}
+
+.main .bg__main .bg__two .list__abilities .ability h1 {
+  margin-top: 1rem;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-family: "Druk Wide Medium";
+}
+
+.main .bg__main .bg__two .list__abilities .ability h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  color: #999595;
+  font-size: .8rem;
+}
+
+#root {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 99.1vw;
+  max-width: 99.1vw;
+}
+
+#root .jett {
+  z-index: 999;
+  height: 95rem;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+/*# sourceMappingURL=global.css.map */
